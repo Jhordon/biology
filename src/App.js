@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Respiration } from "./pages/Respiration"
+import { Glycolysis } from "./pages/Glycolysis"
+import { Oxidation } from "./pages/Oxidation"
+import { Krebs } from "./pages/Krebs"
+import { Phosphorylation } from "./pages/Phosphorylation"
+import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Routes> 
+          <Route path="/" element={<Respiration />} />
+          <Route path="/glycolysis" element={<Glycolysis />} />
+          <Route path="/oxidation" element={<Oxidation />} />
+          <Route path="krebs" element={<Krebs />} />
+          <Route path="phosphorylation" element={<Phosphorylation />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
