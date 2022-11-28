@@ -1,4 +1,10 @@
+import { useContext } from "react";
+import { ImgSource } from "../App";
+
 export const Respiration = () => {
+    
+    const { source } = useContext(ImgSource);
+    
     return (
         <>
             <h1 className="heading"> Cellualar Respiration. </h1>
@@ -14,7 +20,7 @@ export const Respiration = () => {
             <p> In Cellular Respiration, mitochondria gave to me: </p> 
             <p> From 1 single glucose: 2 Pyruvates, 2 Acetoyl-CoAs, 6NADH, 2FADH, 4CO<sub>2</sub>, 2 ATP, and 28 to 30 ATP </p>
 
-            <img alt="cellresp" className="img" src="http://4.bp.blogspot.com/-u6BXGH_uqmI/Vk7b_OoeIdI/AAAAAAAAAnY/EWnKv_dPByw/s1600/cellular_respiration%2Blocations.png" />
+            <img alt="cellresp" className="img" src={source} />
         </>
     );
 }
