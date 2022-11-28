@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/biology/static/css/main.a50017dd.css",
-    "main.js": "/biology/static/js/main.0352e8d9.js",
+    "main.js": "/biology/static/js/main.f51d7e11.js",
     "index.html": "/biology/index.html",
     "main.a50017dd.css.map": "/biology/static/css/main.a50017dd.css.map",
-    "main.0352e8d9.js.map": "/biology/static/js/main.0352e8d9.js.map"
+    "main.f51d7e11.js.map": "/biology/static/js/main.f51d7e11.js.map"
   },
   "entrypoints": [
     "static/css/main.a50017dd.css",
-    "static/js/main.0352e8d9.js"
+    "static/js/main.f51d7e11.js"
   ]
 }
